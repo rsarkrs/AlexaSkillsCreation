@@ -1,0 +1,170 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "baby tracker",
+      "intents": [
+        {
+          "name": "LogDiaperIntent",
+          "slots": [
+            {
+              "name": "diaperType",
+              "type": "DIAPER_TYPE"
+            }
+          ],
+          "samples": [
+            "log a {diaperType} diaper",
+            "log {diaperType} diaper",
+            "record a {diaperType} diaper",
+            "record {diaperType} diaper",
+            "track a {diaperType} diaper"
+          ]
+        },
+        {
+          "name": "LogBottleFeedingIntent",
+          "slots": [
+            {
+              "name": "amount",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "volumeUnit",
+              "type": "VOLUME_UNIT"
+            }
+          ],
+          "samples": [
+            "log a bottle feeding of {amount} {volumeUnit}",
+            "record a bottle feeding of {amount} {volumeUnit}",
+            "track a bottle feeding of {amount} {volumeUnit}"
+          ]
+        },
+        {
+          "name": "LogBreastFeedingIntent",
+          "slots": [
+            {
+              "name": "durationMinutes",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "log breastfeeding for {durationMinutes} minutes",
+            "record breastfeeding for {durationMinutes} minutes",
+            "track breastfeeding for {durationMinutes} minutes"
+          ]
+        },
+        {
+          "name": "StartBreastFeedingTimerIntent",
+          "samples": [
+            "start breastfeeding",
+            "start a breastfeeding timer",
+            "begin breastfeeding"
+          ]
+        },
+        {
+          "name": "StopBreastFeedingTimerIntent",
+          "samples": [
+            "stop breastfeeding",
+            "stop the breastfeeding timer",
+            "end breastfeeding"
+          ]
+        },
+        {
+          "name": "LogTummyTimeIntent",
+          "slots": [
+            {
+              "name": "durationMinutes",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "log tummy time for {durationMinutes} minutes",
+            "record tummy time for {durationMinutes} minutes",
+            "track tummy time for {durationMinutes} minutes"
+          ]
+        },
+        {
+          "name": "StartTummyTimeTimerIntent",
+          "samples": [
+            "start tummy time",
+            "start a tummy time timer",
+            "begin tummy time"
+          ]
+        },
+        {
+          "name": "StopTummyTimeTimerIntent",
+          "samples": [
+            "stop tummy time",
+            "stop the tummy time timer",
+            "end tummy time"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "DIAPER_TYPE",
+          "values": [
+            {
+              "name": {
+                "value": "pee",
+                "synonyms": [
+                  "wet"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "poop"
+              }
+            },
+            {
+              "name": {
+                "value": "both",
+                "synonyms": [
+                  "mixed"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "VOLUME_UNIT",
+          "values": [
+            {
+              "name": {
+                "value": "oz",
+                "synonyms": [
+                  "ounce",
+                  "ounces"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "ml",
+                "synonyms": [
+                  "milliliter",
+                  "milliliters"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

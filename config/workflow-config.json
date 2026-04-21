@@ -1,0 +1,16 @@
+{
+  "defaultExecutionMode": "guided_artifacts",
+  "allowMcpBrowserAutomation": false,
+  "supportedBackends": [
+    "google_apps_script",
+    "generic_rest_api",
+    "home_assistant",
+    "local_webhook"
+  ],
+  "requiredOutputs": [
+    "interaction_model",
+    "backend_contract",
+    "test_plan",
+    "runbook"
+  ]
+}

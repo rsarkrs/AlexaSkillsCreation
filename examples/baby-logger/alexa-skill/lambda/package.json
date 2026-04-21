@@ -1,0 +1,11 @@
+{
+  "name": "baby-logger-skill",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ask-sdk-core": "^2.14.0",
+    "ask-sdk-model": "^1.0.0"
+  }
+}
