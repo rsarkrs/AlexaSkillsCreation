@@ -1,6 +1,9 @@
 # Alexa Skills Creation
 
 This folder contains a minimal, scalable workflow for creating Alexa custom skills for home automation and logging.
+Please note this is intended for personal custom skills and experimentation, not production deployment. 
+In the current state, fully deploying these examples may expose endpoints or secrets if not configured carefully. 
+This is not an issue if you intend to use the custom skills only on your personal account.
 
 ## Recommended Operating Model
 
